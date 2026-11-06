@@ -1,0 +1,11 @@
+[
+  {
+    "character": "demo_character",
+    "paths": 3,
+    "different": 1,
+    "identical": 1,
+    "pc_unresolved": 1,
+    "overlaps": 0,
+    "decode_errors": 0
+  }
+]

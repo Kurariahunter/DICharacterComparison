@@ -1,0 +1,80 @@
+{
+  "scope": {
+    "resources": "SYNTHETIC_RESOURCES",
+    "game": "SYNTHETIC_GAME",
+    "mods": [],
+    "layout": null,
+    "layout_sha256": null,
+    "note": "Static comparison, not runtime validation. Base installation may already contain patches. No assets changed."
+  },
+  "summary": {
+    "character": "demo_character",
+    "paths": 3,
+    "different": 1,
+    "identical": 1,
+    "pc_unresolved": 1,
+    "overlaps": 0,
+    "decode_errors": 0
+  },
+  "files": [
+    {
+      "logical": "characters/demo_character/changed.txt",
+      "inputs": [
+        {
+          "path": "SYNTHETIC_RESOURCES\\characters\\demo_character\\changed.txt",
+          "bytes": 14,
+          "sha256": "026fb4280153d8e26f23888fbc81904f928bf1b3a6e0384a3fa22cadaf476b3a",
+          "status": "different"
+        }
+      ],
+      "installer_overlap": false,
+      "pc": {
+        "source": "SYNTHETIC_GAME\\assets\\characters\\demo_character\\changed.txt",
+        "identity": "exact loose path",
+        "bytes": 10,
+        "sha256": "ef689c41e90900137d0d77fce1ad91a4d7eb650d6bc4c5605607b87e3403ca7c"
+      },
+      "read_errors": []
+    },
+    {
+      "logical": "characters/demo_character/equal.txt",
+      "inputs": [
+        {
+          "path": "SYNTHETIC_RESOURCES\\characters\\demo_character\\equal.txt",
+          "bytes": 4,
+          "sha256": "0967115f2813a3541eaef77de9d9d5773f1c0c04314b0bbfe4ff3b3b1c55b5d5",
+          "status": "identical"
+        }
+      ],
+      "installer_overlap": false,
+      "pc": {
+        "source": "SYNTHETIC_GAME\\assets\\characters\\demo_character\\equal.txt",
+        "identity": "exact loose path",
+        "bytes": 4,
+        "sha256": "0967115f2813a3541eaef77de9d9d5773f1c0c04314b0bbfe4ff3b3b1c55b5d5"
+      },
+      "read_errors": []
+    },
+    {
+      "logical": "characters/demo_character/source_only.txt",
+      "inputs": [
+        {
+          "path": "SYNTHETIC_RESOURCES\\characters\\demo_character\\source_only.txt",
+          "bytes": 11,
+          "sha256": "cc8bac8c92ab27cddfc0cbf92f17d23b43f2cae747744de80f25fe546a24ff5e",
+          "status": "pc_unresolved"
+        }
+      ],
+      "installer_overlap": false,
+      "pc": null,
+      "read_errors": []
+    }
+  ],
+  "limitations": [
+    "PC-only extra files are not enumerated.",
+    "Shared files not named for a character are listed separately, not assigned speculatively.",
+    "Byte differences do not prove bugs or console provenance.",
+    "Motion curves and mesh geometry are hashed, not fully evaluated.",
+    "Installer overlap winners and QuickBMS integration effects are not simulated."
+  ]
+}
